@@ -8,7 +8,7 @@ import Navbar from "../Components/ui/navbar";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
-  const [error, setError] = useState(""); // 🔹 error message state
+  const [error, setError] = useState(""); // error message state
   const navigate = useNavigate();
 
   const { handleLogin } = useContext(AuthContext);
