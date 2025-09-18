@@ -19,7 +19,7 @@ export default function XChatbot({ user }) {
 
     try {
       // 2. Call backend
-      const res = await fetch("http://localhost:5000/api/generate/chat", {
+      const res = await fetch("https://careerai-5ztl.onrender.com/api/generate/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
