@@ -11,12 +11,11 @@ import { AuthContext } from "../context/authContext.jsx";
 
 export default function Recommendations() {
   const [showForm, setShowForm] = useState(false);
-  const [user, setUser] = useState(null);
   const [recommendations, setRecommendations] = useState([]);
   const [selectedCareer, setSelectedCareer] = useState(null);
 
   const navigate = useNavigate();
-  const { User } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
     const savedShowForm = localStorage.getItem("showForm");
@@ -48,7 +47,7 @@ export default function Recommendations() {
   // };
 
   const handleButtonClick = () => {
-    if (User) {
+    if (user) {
       const newState = !showForm;
       setShowForm(newState);
       localStorage.setItem("showForm", newState); // save current state
