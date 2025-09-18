@@ -9,8 +9,8 @@ import { User } from "../Entities/User.js";
 import { Button } from "../Components/ui/button.jsx";
 import { ArrowLeft } from "lucide-react";
 
-import CareerCard from "../Components/recommendations/CareerCard";
-import CareerDetailsModal from "../Components/recommendations/CareerDetailsModal";
+import CareerCard from "../Components/recommendations/CareerCard.jsx";
+import CareerDetailsModal from "../Components/recommendations/CareerDetailsModal.jsx";
 
 export default function Recommendations() {
   const [recommendations, setRecommendations] = useState([]);
