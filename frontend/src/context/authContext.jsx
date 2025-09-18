@@ -31,7 +31,8 @@ export const AuthProvider = ({ children }) => {
   const handleLogin = async (loginData) => {
     const res = await authService.login(loginData); // call backend
     setUser(res.user); // update state → Sidebar rerender
-    window.location.reload();
+   
+
   };
 
   // Logout function
