@@ -13,7 +13,7 @@ router.post("/chat", async (req, res) => {
     if (!prompt) return res.status(400).json({ error: "Prompt required" });
 
     const auth = new GoogleAuth({
-      keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+      keyFile: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS),
       scopes: "https://www.googleapis.com/auth/generative-language",
     });
 
