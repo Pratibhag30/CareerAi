@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(cors({
-  origin: 'https://career-ai-c7x4.vercel.app/', // frontend URL
+  origin: 'https://career-ai-c7x4.vercel.app', // frontend URL
   methods: ['GET','POST'],
   credentials: true
 }));
