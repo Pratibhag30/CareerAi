@@ -8,10 +8,10 @@ import HeroBanner from "../Components/ui/HeroBanner";
 import StatsGrid from "../Components/dashboard/StatsGrid";
 import RecentRecommendations from "../Components/dashboard/RecentRecommendations";
 
-import { User } from "@/entities/User";
+import { User } from "../Entities/User.js";
 import { CareerRecommendation } from "@/entities/CareerRecommendation";
-import { ChatMessage } from "@/entities/ChatMessage";
-import { createPageUrl } from "@/utils";
+import { ChatMessage } from "../Entities/ChatMessage";
+import { createPageUrl } from "../utils.js";
 
 export default function Dashboard() {
   const [user, setUser] = useState(null);
