@@ -8,9 +8,9 @@ import HeroBanner from "../Components/ui/HeroBanner";
 import StatsGrid from "../Components/dashboard/StatsGrid";
 import RecentRecommendations from "../Components/dashboard/RecentRecommendations";
 
-import { User } from "../Entities/User.js";
-import { CareerRecommendation } from "../Entities/CareerRecommendation.js";
-import { ChatMessage } from "../Entities/ChatMessage";
+import { User } from "../entities/User.js";
+import { CareerRecommendation } from "../entities/CareerRecommendation.js";
+import { ChatMessage } from "../entities/ChatMessage.js";
 import { createPageUrl } from "../utils.js";
 
 export default function Dashboard() {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { User } from "../Entities/User.js";
+import { User } from "../entities/User.js";
 import { ArrowLeft, Sparkles } from "lucide-react";
 import { Button } from "../Components/ui/button.jsx";
 import { useNavigate } from "react-router-dom";

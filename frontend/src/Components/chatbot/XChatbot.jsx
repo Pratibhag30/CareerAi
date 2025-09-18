@@ -1,6 +1,6 @@
 import React, { useState ,useEffect } from "react";
 import ChatInterface from "./ChatInterface";
-import { ChatMessage } from "../../Entities/ChatMessage";
+import { ChatMessage } from "../../entities/ChatMessage.js";
 
 
 export default function XChatbot({ user }) {

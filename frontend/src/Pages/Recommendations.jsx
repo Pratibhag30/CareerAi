@@ -1,10 +1,10 @@
 
 import React, { useState , useEffect} from "react";
 import { Briefcase, Palette, Laptop, Stethoscope } from "lucide-react";
-import ProfileForm2 from "../Components/profile/ProfileForm2";
-import CareerCard from "../Components/recommendations/CareerCard";
-import CareerDetailsModal from "../Components/recommendations/CareerDetailsModal";
-import {User} from "../Entities/User.js";
+import ProfileForm2 from "../Components/profile/ProfileForm2.jsx";
+import CareerCard from "../Components/recommendations/CareerCard.jsx";
+import CareerDetailsModal from "../Components/recommendations/CareerDetailsModal.jsx";
+import {User} from "../entities/User.js";
 import {  useNavigate } from "react-router-dom";
 
 export default function Recommendations() {

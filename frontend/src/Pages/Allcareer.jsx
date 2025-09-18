@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import { CareerRecommendation } from "../Entities/CareerRecommendation.js";
-import { User } from "../Entities/User.js";
+import { CareerRecommendation } from "../entities/CareerRecommendation.js";
+import { User } from "../entities/User.js";
 import { Button } from "../Components/ui/button.jsx";
 import { ArrowLeft } from "lucide-react";
 
