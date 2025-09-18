@@ -19,8 +19,8 @@ import {
   SidebarHeader,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
+} from "./Components/ui/sidebar";
+import { Button } from "./Components/ui/button";
 import { AuthContext } from "./context/authContext"; // 👈 import context
 
 const navigationItems = [

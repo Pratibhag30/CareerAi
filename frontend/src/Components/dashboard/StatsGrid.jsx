@@ -1,8 +1,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "../ui/card";
+import { Badge } from "../ui/badge";
 import { Target, TrendingUp, BookOpen, MessageCircle, Sparkles } from "lucide-react";
 
 export default function StatsGrid({
