@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // backend URL
-const API_URL = 'http://localhost:5000/api/userCareer';
+const API_URL = 'https://careerai-5ztl.onrender.com/api/userCareer';
 
 const api = axios.create({
   baseURL: API_URL,

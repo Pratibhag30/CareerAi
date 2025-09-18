@@ -4,7 +4,7 @@ export const User = {
       const token = localStorage.getItem("token");
       if (!token) return null;
 
-      const response = await fetch("http://localhost:5000/api/auth/me", {
+      const response = await fetch("https://careerai-5ztl.onrender.com/api/auth/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export const User = {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("No auth token");
 
-      const res = await fetch("http://localhost:5000/api/profile/save", {
+      const res = await fetch("https://careerai-5ztl.onrender.com/api/profile/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

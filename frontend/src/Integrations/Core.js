@@ -6,7 +6,7 @@ export function InvokeLLM(prompt) {
 
 // src/Integrations/Core.js
 export async function getRecommendations(userInput) {
-  const response = await fetch("http://localhost:5000/api/predict-career", {
+  const response = await fetch("https://careerai-5ztl.onrender.com/api/predict-career", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(userInput),

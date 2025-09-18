@@ -36,7 +36,7 @@ export default function Profile() {
     try {
       if (!user?._id) throw new Error("User ID missing");
 
-      await fetch("http://localhost:5000/api/profile/save", {
+      await fetch("https://careerai-5ztl.onrender.com/api/profile/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: user._id, ...profileData }),

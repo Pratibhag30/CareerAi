@@ -33,7 +33,7 @@ export default function ProfileForm2() {
      console.log(userId);
       // //  Save in backend
       await axios.post(
-        `http://localhost:5000/api/userCareer/save/${userId}`,
+        `https://careerai-5ztl.onrender.com/api/userCareer/save/${userId}`,
         { careers: result.response.recommendations }
       );
        console.log("saved to database");
