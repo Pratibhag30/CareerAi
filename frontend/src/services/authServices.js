@@ -12,6 +12,7 @@ export const login = async (data) => {
   // ✅ Save in localStorage
   localStorage.setItem("token", token);
   localStorage.setItem("user", JSON.stringify(user));
+  
   return response.data;
 };
 

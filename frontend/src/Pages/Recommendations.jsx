@@ -48,7 +48,7 @@ export default function Recommendations() {
   // };
 
   const handleButtonClick = () => {
-    if (user) {
+    if (User) {
       const newState = !showForm;
       setShowForm(newState);
       localStorage.setItem("showForm", newState); // save current state
