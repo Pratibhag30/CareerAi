@@ -9,7 +9,7 @@ import StatsGrid from "../Components/dashboard/StatsGrid";
 import RecentRecommendations from "../Components/dashboard/RecentRecommendations";
 
 import { User } from "../Entities/User.js";
-import { CareerRecommendation } from "@/entities/CareerRecommendation";
+import { CareerRecommendation } from "../Entities/CareerRecommendation.js";
 import { ChatMessage } from "../Entities/ChatMessage";
 import { createPageUrl } from "../utils.js";
 
