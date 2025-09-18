@@ -6,6 +6,8 @@ import CareerCard from "../Components/recommendations/CareerCard.jsx";
 import CareerDetailsModal from "../Components/recommendations/CareerDetailsModal.jsx";
 import {User} from "../entities/User.js";
 import {  useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/authContext.jsx";
+
 
 export default function Recommendations() {
   const [showForm, setShowForm] = useState(false);
@@ -14,28 +16,37 @@ export default function Recommendations() {
   const [selectedCareer, setSelectedCareer] = useState(null);
 
   const navigate = useNavigate();
+    const { User } = useContext(AuthContext);
 
-useEffect(() => {
-  const fetchUser = async () => {
-    try {
-      const currentUser = await User.me(); 
-      console.log(currentUser);
-      setUser(currentUser); // null if not logged in, object if logged in
-    } catch (err) {
-      console.error("Error fetching user:", err);
-      setUser(null);
-    }
-  };
+// useEffect(() => {
+//   const fetchUser = async () => {
+//     try {
+//       const currentUser = await User.me(); 
+//       console.log(currentUser);
+//       setUser(currentUser); // null if not logged in, object if logged in
+//     } catch (err) {
+//       console.error("Error fetching user:", err);
+//       setUser(null);
+//     }
+//   };
 
-  fetchUser();
-}, []);
+//   fetchUser();
+// }, []);
 
 
-   const handleButtonClick = () => {
-    if (user) {
-      setShowForm(!showForm); // toggle form
+  //  const handleButtonClick = () => {
+  //   if (user) {
+  //     setShowForm(!showForm); // toggle form
+  //   } else {
+  //     navigate("/login"); // redirect if not logged in
+  //   }
+  // };
+
+    const handleButtonClick = () => {
+    if (User) {
+      setShowForm(!showForm);
     } else {
-      navigate("/login"); // redirect if not logged in
+      navigate("/login");
     }
   };
 
