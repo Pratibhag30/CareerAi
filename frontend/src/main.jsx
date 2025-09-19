@@ -25,7 +25,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout><Dashboard /></Layout>} />
       <Route path="/chatbot" element={<Chatbot />} />
-      <Route path="/profile" element={<Layout><Profile /></Layout>} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/Allcareer" element={<Layout><Allcareer /></Layout>} />
       <Route path="/recommendations" element={<Recommendations/>} />
        <Route path="/register" element={<Register />} />
