@@ -96,7 +96,7 @@ export default function ChatInterface({
             <div>
               <CardTitle className="text-xl">AI Career Mentor 🤖</CardTitle>
               <p className="text-sm text-gray-600">
-                Hi {user?.full_name?.split(" ")[0] || "there"}! I'm here to help with your career journey.
+                Hi ! I'm here to help with your career journey.
               </p>
             </div>
             <div className="ml-auto">
