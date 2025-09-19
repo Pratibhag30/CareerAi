@@ -24,10 +24,10 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<Layout><Dashboard /></Layout>} />
-      <Route path="/chatbot" element={<Layout><Chatbot /></Layout>} />
+      <Route path="/chatbot" element={<Chatbot />} />
       <Route path="/profile" element={<Layout><Profile /></Layout>} />
       <Route path="/Allcareer" element={<Layout><Allcareer /></Layout>} />
-      <Route path="/recommendations" element={<Layout> <Recommendations/></Layout>} />
+      <Route path="/recommendations" element={<Recommendations/>} />
        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
     </Routes>
