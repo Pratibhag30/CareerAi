@@ -49,9 +49,9 @@ export default function CareerCard({ career, onViewDetails, onSaveCareer }) {
             </div>
             <p className="text-gray-600 text-sm line-clamp-2">
               {/* {career.description || career.fitReason} */}
-              <ReactMarkdown className="text-gray-600 text-sm line-clamp-2">
-                {career.description || career.fitReason}
-              </ReactMarkdown>
+              <p className="text-gray-600 text-sm">
+                <ReactMarkdown>{career.description || career.fitReason}</ReactMarkdown>
+              </p>
             </p>
           </div>
 
