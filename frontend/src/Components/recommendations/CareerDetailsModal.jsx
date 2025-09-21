@@ -5,14 +5,14 @@ export default function CareerDetailsModal({ career, onClose }) {
   if (!career) return null;
 
   const renderBoldText = (text) => {
-    if (typeof text !== "string") {
-      return text;
-    }
+  if (typeof text !== "string") {
+    return text;
+  }
 
-    return text.split("**").map((part, idx) =>
-      idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
-    );
-  };
+  return text.split("**").map((part, idx) =>
+    idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+  );
+};
 
 
   return (
@@ -33,20 +33,15 @@ export default function CareerDetailsModal({ career, onClose }) {
         {/* Content */}
         <div className="p-6 space-y-6">
           {/* Fit Reason */}
-{/* 
-          <h3 className="font-semibold mt-2">Why This Career Fits You:</h3> */}
-          {/* <div className="space-y-2 text-gray-700">
+
+          <h3 className="font-semibold mt-2">Why This Career Fits You:</h3>
+          <div className="space-y-2 text-gray-700">
          {career.fitReason
                 ?.split("-")
                 .filter((point) => point.trim() !== "")
                 .map((point, i) => (
                   <p key={i}>{renderBoldText(point.trim())}</p>
                 ))}
-          </div> */}
-
-          <h3 className="font-semibold mt-2">Why This Career Fits You:</h3>
-          <div className="space-y-2 text-gray-700">
-            <ReactMarkdown>{career.fitReason}</ReactMarkdown>
           </div>
 
 

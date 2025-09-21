@@ -3,7 +3,6 @@ import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Bookmark, BookmarkCheck, TrendingUp } from "lucide-react";
-import ReactMarkdown from "react-markdown";
 
 export default function CareerCard({ career, onViewDetails, onSaveCareer }) {
   // Growth color
@@ -47,11 +46,9 @@ export default function CareerCard({ career, onViewDetails, onSaveCareer }) {
                 </Badge>
               )}
             </div>
-              {/* {career.description || career.fitReason} */}
-              <p className="text-gray-600 text-sm">
-                <ReactMarkdown>{career.description || career.fitReason}</ReactMarkdown>
-              </p>
-           
+            <p className="text-gray-600 text-sm line-clamp-2">
+              {career.description || career.fitReason}
+            </p>
           </div>
 
           {/* Save Career */}
