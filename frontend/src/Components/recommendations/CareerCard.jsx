@@ -47,12 +47,11 @@ export default function CareerCard({ career, onViewDetails, onSaveCareer }) {
                 </Badge>
               )}
             </div>
-            <p className="text-gray-600 text-sm line-clamp-2">
               {/* {career.description || career.fitReason} */}
               <p className="text-gray-600 text-sm">
                 <ReactMarkdown>{career.description || career.fitReason}</ReactMarkdown>
               </p>
-            </p>
+           
           </div>
 
           {/* Save Career */}
